@@ -2,7 +2,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         header('Location: index.html');
     }
-    
+
     $nickname = $_POST['nickname'];
     echo $nickname; 
     echo'<br>';
@@ -20,7 +20,7 @@
     $content = $_POST['content'];
 
     if ($nickname == '') {
-       $nickname_result = 'ニックネームが入力されていません。';
+       $nickname_result = 'ニックネームが、入力されていません。';
     } else {
         $nickname_result = 'ようこそ,' .$nickname .'様';
     }
